@@ -349,6 +349,333 @@
         </div>
     </section>
 
+    <style>
+        .post-card {
+            width: 380px;
+            background: linear-gradient(to top left, #00709F, #0A5070);
+            background-color: linear-gradient(to top left, #00709F, #0A5070);
+            border: 1px solid rgb(84 90 106);
+            border-radius: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            transition: transform 0.3s ease;
+            /* Add a transition for smooth zoom effect */
+        }
+
+        @media only screen and (max-width: 600px) {
+            .post-card {
+                width: 350px;
+            }
+
+        }
+
+        .post-card:hover {
+            transform: scale(1.03);
+
+            /* Zoom in by 5% on hover */
+        }
+
+        .avatar {
+            height: 30px;
+            width: 135px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #FA9D08;
+            background-image: #FA9D08
+        }
+
+        .avatar2 {
+            height: 30px;
+            width: 135px;
+            padding: 5px;
+            padding-bottom: 30px;
+            border-radius: 5px;
+            background-color: #FA9D08;
+            background-image: #FA9D08;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .avatar p {
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .title {
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: all .35s ease-in;
+        }
+
+        .title:hover {
+            color: #FA9D08;
+        }
+
+        .image-preview {
+            flex: 1;
+            min-height: 174px;
+            width: auto;
+            border-radius: 20px;
+            background-color: blueviolet;
+            background-image: url(assets/img/banner1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 25px;
+            margin-top: 15px;
+        }
+
+        .image-preview2 {
+            flex: 1;
+            min-height: 174px;
+            width: auto;
+            border-radius: 20px;
+            background-color: blueviolet;
+            background-image: url(assets/img/banner2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 25px;
+            margin-top: 15px;
+        }
+
+
+        .comment-like {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2px 0;
+        }
+
+        .comment-like span {
+            cursor: pointer;
+            height: 40px;
+            width: 50px;
+            padding: 0 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            border-radius: 10px;
+            background-color: transparent;
+            transition: all .15s ease;
+        }
+
+        .comment-like span:hover {
+            background-color: rgba(137, 43, 226, 0.096);
+        }
+
+        .comment-like span svg {
+            fill: rgb(255, 255, 255);
+            margin-right: 2px;
+        }
+
+        .plus {
+            color: #FA9D08;
+            font-weight: 500;
+        }
+
+        .lists {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .list:hover {
+            transition: all .35s ease-in;
+            border-radius: 7px;
+            padding: 5px;
+            background-color: #FA9D08;
+        }
+
+
+        .list span {
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.24);
+            background-color: #007bff;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list span svg {
+            height: 18px;
+            width: 18px;
+        }
+
+        .list p {
+            display: block;
+            font-family: sans-serif;
+        }
+
+        .price2 {
+            font-size: 30px;
+            color: #FA9D08;
+        }
+
+        .price3 {
+            font-size: 20px;
+            color: #fa9d08bb;
+        }
+    </style>
+
+    <section class="appie-blog-3-area pt-70 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="appie-section-title text-center wow animated fadeInLeft" data-wow-duration="2000ms"
+                        data-wow-delay="200ms">
+                        <h3 class="">Our Courses</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-4 wow animated fadeInLeft" data-wow-duration="2000ms" data-wow-delay="200ms">
+                    <div class="post-card">
+                        <div class="image-preview"></div>
+                        <a href="#" class="title mt-2 ">Chemistry Tuition + Entrance </a>
+                        <span class="plus mb-3">Plus One</span>
+
+                        <ul class="lists">
+                            <li class="list">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-file-earmark-play-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6 6.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43V6.884z" />
+                                    </svg>
+                                </span>
+                                <p>
+                                <div style="font-weight: 800; font-size: 20px;">290+</div>Video Lectures
+                                </p>
+                            </li>
+                            <li class="list">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+                                        <path
+                                            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                </span>
+                                <p>
+                                <div style="font-weight: 800; font-size: 20px;">1500+</div>MCQ Questions
+                                </p>
+                            </li>
+                            <li class="list">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-people" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                    </svg>
+                                </span>
+                                <p>
+                                <div style="font-weight: 800; font-size: 20px;">11+</div>years experienced Tutor
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <!-- Column for text -->
+                            <div class="col-6">
+                                <h4 class="price2 mt-4">₹999/-</h4>
+                                <p class="price3  mb-2"><s>₹2000/-</s></p>
+                            </div>
+                            <!-- Column for small card -->
+                            <div class="col-6">
+                                <div class="avatar2">
+                                    <p class="text-white">Limited Offer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-4 wow animated fadeInRight" data-wow-duration="2000ms" data-wow-delay="200ms">
+                    <div class="post-card">
+                        <div class="image-preview2"></div>
+                        <a href="#" class="title mt-2 ">Chemistry Tuition + Entrance </a>
+                        <span class="plus mb-3">Plus Two</span>
+
+                        <ul class="lists">
+                            <li class="list">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-file-earmark-play-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6 6.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43V6.884z" />
+                                    </svg>
+                                </span>
+                                <p>
+                                <div style="font-weight: 800; font-size: 20px;">290+</div>Video Lectures
+                                </p>
+                            </li>
+                            <li class="list">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+                                        <path
+                                            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                </span>
+                                <p>
+                                <div style="font-weight: 800; font-size: 20px;">1500+</div>MCQ Questions
+                                </p>
+                            </li>
+                            <li class="list">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-people" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                    </svg>
+                                </span>
+                                <p>
+                                <div style="font-weight: 800; font-size: 20px;">11+</div>years experienced Tutor
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <!-- Column for text -->
+                            <div class="col-6">
+                                <h4 class="price2 mt-4">₹999/-</h4>
+                                <p class="price3  mb-2"><s>₹2000/-</s></p>
+                            </div>
+                            <!-- Column for small card -->
+                            <div class="col-6">
+                                <div class="avatar2">
+                                    <p class="text-white">Limited Offer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
 
     <section class="appie-blog-3-area pt-40 pb-100">
         <div class="container">
